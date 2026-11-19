@@ -1,0 +1,678 @@
+{
+  "base": [
+    {
+      "scene": "Lighthouse study",
+      "mode": "clean",
+      "output": "{\"issues\":[]}",
+      "expected": {
+        "issues": []
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Lighthouse study",
+      "mode": "authorized",
+      "output": "{\"issues\":[{\"field\":\"mug\",\"restore\":\"in hand\"}]}",
+      "expected": {
+        "issues": []
+      },
+      "json_valid": true,
+      "exact": false
+    },
+    {
+      "scene": "Lighthouse study",
+      "mode": "unexplained",
+      "output": "{\"issues\":[],\"restore\":[]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "coat",
+            "restore": "gray"
+          }
+        ]
+      },
+      "json_valid": false,
+      "exact": false
+    },
+    {
+      "scene": "Lighthouse study",
+      "mode": "mixed",
+      "output": "{\"issues\":[],\"restore\":[]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "desk lamp",
+            "restore": "off"
+          }
+        ]
+      },
+      "json_valid": false,
+      "exact": false
+    },
+    {
+      "scene": "Lighthouse study",
+      "mode": "rejected",
+      "output": "{\"issues\":[],\"restore\":[]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "coat",
+            "restore": "navy"
+          }
+        ]
+      },
+      "json_valid": false,
+      "exact": false
+    },
+    {
+      "scene": "Lighthouse study",
+      "mode": "several",
+      "output": "{\"issues\":[{\"field\":\"coat\",\"restore\":\"gray\"},{\"field\":\"mug\",\"restore\":\"desk\"},{\"field\":\"desk lamp\",\"restore\":\"on\"},{\"field\":\"shade\",\"restore\":\"lowered\"}]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "coat",
+            "restore": "gray"
+          },
+          {
+            "field": "desk lamp",
+            "restore": "on"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": false
+    },
+    {
+      "scene": "Aquarium opening",
+      "mode": "clean",
+      "output": "{\"issues\":[],\"response\":\"Clean\"}",
+      "expected": {
+        "issues": []
+      },
+      "json_valid": false,
+      "exact": false
+    },
+    {
+      "scene": "Aquarium opening",
+      "mode": "authorized",
+      "output": "{\"issues\":[{\"field\":\"ladder\",\"restore\":\"tank\"},{\"field\":\"tank cover\",\"restore\":\"flat\"},{\"field\":\"towel\",\"restore\":\"hook\"}]}",
+      "expected": {
+        "issues": []
+      },
+      "json_valid": true,
+      "exact": false
+    },
+    {
+      "scene": "Aquarium opening",
+      "mode": "unexplained",
+      "output": "{\"issues\":[],\"response\":\"Clean\"}",
+      "expected": {
+        "issues": [
+          {
+            "field": "towel",
+            "restore": "bench"
+          }
+        ]
+      },
+      "json_valid": false,
+      "exact": false
+    },
+    {
+      "scene": "Aquarium opening",
+      "mode": "mixed",
+      "output": "{\"issues\":[{\"field\":\"flippers\",\"restore\":\"dry\"}]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "flippers",
+            "restore": "dry"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Aquarium opening",
+      "mode": "rejected",
+      "output": "{\"issues\":[],\"message\":\"No continuity issues detected. The director's note clarifies that the towel is on a hook in shot B, which is a change from the bench in shot A, and this is authorized by the note.\"}",
+      "expected": {
+        "issues": [
+          {
+            "field": "towel",
+            "restore": "bench"
+          }
+        ]
+      },
+      "json_valid": false,
+      "exact": false
+    },
+    {
+      "scene": "Aquarium opening",
+      "mode": "several",
+      "output": "{\"issues\":[{\"field\":\"ladder\",\"restore\":\"tank\"},{\"field\":\"towel\",\"restore\":\"hook\"},{\"field\":\"tank cover\",\"restore\":\"tilted\"}]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "ladder",
+            "restore": "tank"
+          },
+          {
+            "field": "towel",
+            "restore": "hook"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": false
+    },
+    {
+      "scene": "Mountain observatory",
+      "mode": "clean",
+      "output": "{\"issues\":[],\"restore\":[]}",
+      "expected": {
+        "issues": []
+      },
+      "json_valid": false,
+      "exact": false
+    },
+    {
+      "scene": "Mountain observatory",
+      "mode": "authorized",
+      "output": "{\"issues\":[],\"restore\":[]}",
+      "expected": {
+        "issues": []
+      },
+      "json_valid": false,
+      "exact": false
+    },
+    {
+      "scene": "Mountain observatory",
+      "mode": "unexplained",
+      "output": "{\"issues\":[],\"restore\":[]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "journal",
+            "restore": "open"
+          }
+        ]
+      },
+      "json_valid": false,
+      "exact": false
+    },
+    {
+      "scene": "Mountain observatory",
+      "mode": "mixed",
+      "output": "{\"issues\":[{\"field\":\"chair\",\"restore\":\"inside\"}]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "dome",
+            "restore": "closed"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": false
+    },
+    {
+      "scene": "Mountain observatory",
+      "mode": "rejected",
+      "output": "{\"issues\":[],\"restore\":[]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "dome",
+            "restore": "open"
+          }
+        ]
+      },
+      "json_valid": false,
+      "exact": false
+    },
+    {
+      "scene": "Mountain observatory",
+      "mode": "several",
+      "output": "{\"issues\":[{\"field\":\"chair\",\"restore\":\"inside\"}]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "chair",
+            "restore": "inside"
+          },
+          {
+            "field": "dome",
+            "restore": "open"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": false
+    },
+    {
+      "scene": "Chalk theater",
+      "mode": "clean",
+      "output": "{\"issues\":[],\"restore\":[]}",
+      "expected": {
+        "issues": []
+      },
+      "json_valid": false,
+      "exact": false
+    },
+    {
+      "scene": "Chalk theater",
+      "mode": "authorized",
+      "output": "{\"issues\":[{\"field\":\"sash\",\"restore\":\"shoulder\"}]}",
+      "expected": {
+        "issues": []
+      },
+      "json_valid": true,
+      "exact": false
+    },
+    {
+      "scene": "Chalk theater",
+      "mode": "unexplained",
+      "output": "{\"issues\":[],\"restore\":[]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "chalk",
+            "restore": "white"
+          }
+        ]
+      },
+      "json_valid": false,
+      "exact": false
+    },
+    {
+      "scene": "Chalk theater",
+      "mode": "mixed",
+      "output": "{\"issues\":[],\"restore\":[]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "chalkboard",
+            "restore": "blank"
+          }
+        ]
+      },
+      "json_valid": false,
+      "exact": false
+    },
+    {
+      "scene": "Chalk theater",
+      "mode": "rejected",
+      "output": "{\"issues\":[],\"restore\":[]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "chalk",
+            "restore": "blue"
+          }
+        ]
+      },
+      "json_valid": false,
+      "exact": false
+    },
+    {
+      "scene": "Chalk theater",
+      "mode": "several",
+      "output": "{\"issues\":[{\"field\":\"prop sword\",\"restore\":\"stage right\"},{\"field\":\"chalkboard\",\"restore\":\"drawn on\"},{\"field\":\"chalk\",\"restore\":\"blue\"},{\"field\":\"sash\",\"restore\":\"shoulder\"}]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "chalk",
+            "restore": "blue"
+          },
+          {
+            "field": "chalkboard",
+            "restore": "drawn on"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": false
+    }
+  ],
+  "adapter": [
+    {
+      "scene": "Lighthouse study",
+      "mode": "clean",
+      "output": "{\"issues\":[]}",
+      "expected": {
+        "issues": []
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Lighthouse study",
+      "mode": "authorized",
+      "output": "{\"issues\":[]}",
+      "expected": {
+        "issues": []
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Lighthouse study",
+      "mode": "unexplained",
+      "output": "{\"issues\":[{\"field\":\"coat\",\"restore\":\"gray\"}]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "coat",
+            "restore": "gray"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Lighthouse study",
+      "mode": "mixed",
+      "output": "{\"issues\":[]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "desk lamp",
+            "restore": "off"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": false
+    },
+    {
+      "scene": "Lighthouse study",
+      "mode": "rejected",
+      "output": "{\"issues\":[{\"field\":\"coat\",\"restore\":\"navy\"}]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "coat",
+            "restore": "navy"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Lighthouse study",
+      "mode": "several",
+      "output": "{\"issues\":[{\"field\":\"coat\",\"restore\":\"gray\"},{\"field\":\"desk lamp\",\"restore\":\"on\"}]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "coat",
+            "restore": "gray"
+          },
+          {
+            "field": "desk lamp",
+            "restore": "on"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Aquarium opening",
+      "mode": "clean",
+      "output": "{\"issues\":[]}",
+      "expected": {
+        "issues": []
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Aquarium opening",
+      "mode": "authorized",
+      "output": "{\"issues\":[]}",
+      "expected": {
+        "issues": []
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Aquarium opening",
+      "mode": "unexplained",
+      "output": "{\"issues\":[{\"field\":\"towel\",\"restore\":\"bench\"}]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "towel",
+            "restore": "bench"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Aquarium opening",
+      "mode": "mixed",
+      "output": "{\"issues\":[]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "flippers",
+            "restore": "dry"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": false
+    },
+    {
+      "scene": "Aquarium opening",
+      "mode": "rejected",
+      "output": "{\"issues\":[{\"field\":\"towel\",\"restore\":\"bench\"}]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "towel",
+            "restore": "bench"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Aquarium opening",
+      "mode": "several",
+      "output": "{\"issues\":[]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "ladder",
+            "restore": "tank"
+          },
+          {
+            "field": "towel",
+            "restore": "hook"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": false
+    },
+    {
+      "scene": "Mountain observatory",
+      "mode": "clean",
+      "output": "{\"issues\":[]}",
+      "expected": {
+        "issues": []
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Mountain observatory",
+      "mode": "authorized",
+      "output": "{\"issues\":[]}",
+      "expected": {
+        "issues": []
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Mountain observatory",
+      "mode": "unexplained",
+      "output": "{\"issues\":[{\"field\":\"journal\",\"restore\":\"open\"}]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "journal",
+            "restore": "open"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Mountain observatory",
+      "mode": "mixed",
+      "output": "{\"issues\":[{\"field\":\"dome\",\"restore\":\"closed\"}]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "dome",
+            "restore": "closed"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Mountain observatory",
+      "mode": "rejected",
+      "output": "{\"issues\":[{\"field\":\"dome\",\"restore\":\"open\"}]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "dome",
+            "restore": "open"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Mountain observatory",
+      "mode": "several",
+      "output": "{\"issues\":[]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "chair",
+            "restore": "inside"
+          },
+          {
+            "field": "dome",
+            "restore": "open"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": false
+    },
+    {
+      "scene": "Chalk theater",
+      "mode": "clean",
+      "output": "{\"issues\":[]}",
+      "expected": {
+        "issues": []
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Chalk theater",
+      "mode": "authorized",
+      "output": "{\"issues\":[]}",
+      "expected": {
+        "issues": []
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Chalk theater",
+      "mode": "unexplained",
+      "output": "{\"issues\":[{\"field\":\"chalk\",\"restore\":\"white\"}]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "chalk",
+            "restore": "white"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Chalk theater",
+      "mode": "mixed",
+      "output": "{\"issues\":[]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "chalkboard",
+            "restore": "blank"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": false
+    },
+    {
+      "scene": "Chalk theater",
+      "mode": "rejected",
+      "output": "{\"issues\":[{\"field\":\"chalk\",\"restore\":\"blue\"}]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "chalk",
+            "restore": "blue"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": true
+    },
+    {
+      "scene": "Chalk theater",
+      "mode": "several",
+      "output": "{\"issues\":[]}",
+      "expected": {
+        "issues": [
+          {
+            "field": "chalk",
+            "restore": "blue"
+          },
+          {
+            "field": "chalkboard",
+            "restore": "drawn on"
+          }
+        ]
+      },
+      "json_valid": true,
+      "exact": false
+    }
+  ]
+}

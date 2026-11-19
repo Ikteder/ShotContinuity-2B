@@ -1,0 +1,17 @@
+{
+  "scene": "Mountain observatory",
+  "actor": "Kavi",
+  "shot_a": {
+    "dome": "closed",
+    "chair": "inside",
+    "journal": "shut",
+    "red light": "dim"
+  },
+  "shot_b": {
+    "red light": "bright",
+    "dome": "open",
+    "journal": "shut",
+    "chair": "inside"
+  },
+  "director_note": "The note about the dome being open referred to an alternate edit we aren't using. Camera reframes a little closer in B. Continuity has signed off on the red light being bright from B onward."
+}

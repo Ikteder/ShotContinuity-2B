@@ -1,0 +1,59 @@
+{
+  "final": {
+    "base": {
+      "exact": 2,
+      "total": 24,
+      "json_valid": 10,
+      "by_mode": {
+        "clean": 1,
+        "mixed": 1
+      }
+    },
+    "adapter": {
+      "exact": 18,
+      "total": 24,
+      "json_valid": 24,
+      "by_mode": {
+        "clean": 4,
+        "authorized": 4,
+        "unexplained": 4,
+        "rejected": 4,
+        "several": 1,
+        "mixed": 1
+      }
+    }
+  },
+  "development": {
+    "base": {
+      "exact": 9,
+      "total": 54,
+      "json_valid": 26,
+      "by_mode": {
+        "clean": 3,
+        "mixed": 3,
+        "rejected": 3
+      }
+    },
+    "adapter": {
+      "exact": 48,
+      "total": 54,
+      "json_valid": 54,
+      "by_mode": {
+        "clean": 12,
+        "authorized": 12,
+        "unexplained": 12,
+        "mixed": 4,
+        "rejected": 4,
+        "several": 4
+      }
+    },
+    "train": {
+      "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "training_pool": 240,
+      "examples_per_epoch": 240,
+      "epochs": 2,
+      "peak_cuda_gib": 5.47,
+      "wall_seconds": 145.1
+    }
+  }
+}
